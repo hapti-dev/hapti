@@ -68,7 +68,7 @@ const { likely_cents, at_most_cents } = await hapti.tasks.estimate({ url, goal }
 const ok = await Hapti.verifyWebhook(rawBody, request.headers['hapti-signature'], process.env.HAPTI_WEBHOOK_SECRET);
 ```
 
-Test keys (`hp_test_…`) are free and never send the data to the sites. Live keys (`hp_live_…`) are billed only when a task succeeds.
+Test keys (`hp_test_…`) never send the data to the sites; live keys (`hp_live_…`) do the task for real. Both are billed only when a task succeeds, from the same credit.
 
 ## Your users connect their own accounts
 

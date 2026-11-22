@@ -48,7 +48,7 @@ from hapti import verify_webhook
 verify_webhook(raw_body, headers["Hapti-Signature"], secret)
 ```
 
-Test keys (`hp_test_...`) are free and never send the data to the sites. Live keys (`hp_live_...`) are billed only when a task succeeds.
+Test keys (`hp_test_...`) never send the data to the sites; live keys (`hp_live_...`) do the task for real. Both are billed only when a task succeeds, from the same credit.
 
 ```python
 link = hapti.users.connect_link("customer-42", accounts=[{"account": "bank", "origin": "https://www.my-bank.com", "label": "My bank"}], brand={"name": "Acme"})

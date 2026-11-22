@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "dev.hapti/hapti",
+  "title": "Hapti",
+  "description": "Do tasks on websites that have no API: a browser agent that works by sight, paid only on success.",
+  "websiteUrl": "https://hapti.dev/docs/agents",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.hapti.dev/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer and your Hapti API key, like Bearer hp_test_... Test keys are free: get one at https://app.hapti.dev",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

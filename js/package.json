@@ -1,0 +1,40 @@
+{
+  "name": "hapti-sdk",
+  "version": "0.2.0",
+  "description": "Hapti: an agent that does tasks on any website by sight, paid only when it succeeds",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://hapti.dev/docs/",
+  "keywords": [
+    "hapti",
+    "computer-use",
+    "browser-agent",
+    "automation",
+    "agent"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hapti-dev/hapti.git",
+    "directory": "js"
+  },
+  "bugs": {
+    "url": "https://github.com/hapti-dev/hapti/issues"
+  }
+}

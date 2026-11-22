@@ -8,7 +8,7 @@
     "url": "https://github.com/hapti-dev/hapti",
     "source": "github"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "remotes": [
     {
       "type": "streamable-http",
@@ -16,8 +16,8 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Bearer and your Hapti API key, like Bearer hp_test_... Test keys are free: get one at https://app.hapti.dev",
-          "isRequired": true,
+          "description": "Optional: Bearer and your Hapti API key, like Bearer hp_test_... Clients that support MCP authorization sign in with OAuth instead.",
+          "isRequired": false,
           "isSecret": true
         }
       ]

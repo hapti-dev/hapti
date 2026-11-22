@@ -4,7 +4,11 @@
   "title": "Hapti",
   "description": "Do tasks on websites that have no API: a browser agent that works by sight, paid only on success.",
   "websiteUrl": "https://hapti.dev/docs/agents",
-  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/hapti-dev/hapti",
+    "source": "github"
+  },
+  "version": "1.0.1",
   "remotes": [
     {
       "type": "streamable-http",

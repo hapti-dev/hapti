@@ -62,6 +62,10 @@ The agent never invents a value. When something is missing, such as a code recei
 
 Hapti is a remote MCP server at `https://api.hapti.dev/mcp`, listed in the official MCP registry as `dev.hapti/hapti`.
 
+[![Add to Cursor](https://img.shields.io/badge/Add_to-Cursor-111111?style=for-the-badge)](https://cursor.com/install-mcp?name=hapti&config=eyJ1cmwiOiJodHRwczovL2FwaS5oYXB0aS5kZXYvbWNwIiwiaGVhZGVycyI6eyJBdXRob3JpemF0aW9uIjoiQmVhcmVyIGhwX3Rlc3RfWU9VUl9LRVkifX0%3D) [![Install in VS Code](https://img.shields.io/badge/Install_in-VS_Code-0098FF?style=for-the-badge)](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522hapti%2522%252C%2522type%2522%253A%2522http%2522%252C%2522url%2522%253A%2522https%253A%252F%252Fapi.hapti.dev%252Fmcp%2522%252C%2522headers%2522%253A%257B%2522Authorization%2522%253A%2522Bearer%2520hp_test_YOUR_KEY%2522%257D%257D)
+
+Replace `hp_test_YOUR_KEY` with your key once the editor opens, or create a key in the [console](https://app.hapti.dev) and use its install buttons, which fill it in for you.
+
 ```bash
 claude mcp add --transport http hapti https://api.hapti.dev/mcp \
   --header "Authorization: Bearer hp_test_..."

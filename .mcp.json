@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "hapti": {
+      "type": "http",
+      "url": "https://api.hapti.dev/mcp"
+    }
+  }
+}

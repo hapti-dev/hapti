@@ -58,7 +58,7 @@ task = hapti.tasks.run(
 print(task["result"]["answer"])
 ```
 
-The agent never invents a value. When something is missing, such as a code received by text message, the task waits with a question that you or the person answer. Get a free test key at [app.hapti.dev](https://app.hapti.dev).
+The agent never invents a value. When something is missing, such as a code received by text message, the task waits with a question that you or the person answer. Create a test key at [app.hapti.dev](https://app.hapti.dev).
 
 ## Use it from an AI agent (MCP)
 

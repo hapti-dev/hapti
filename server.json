@@ -4,11 +4,27 @@
   "title": "Hapti",
   "description": "Do tasks on websites that have no API: a browser agent that works by sight, paid only on success.",
   "websiteUrl": "https://hapti.dev/docs/agents",
+  "icons": [
+    {
+      "src": "https://hapti.dev/apple-touch-icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "180x180"
+      ]
+    },
+    {
+      "src": "https://hapti.dev/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
   "repository": {
     "url": "https://github.com/hapti-dev/hapti",
     "source": "github"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "remotes": [
     {
       "type": "streamable-http",

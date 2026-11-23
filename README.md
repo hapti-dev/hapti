@@ -1,6 +1,8 @@
 # Hapti
 
-**Hapti does tasks on websites that have no API.** You send a website and a goal in plain words. An agent opens a real browser, looks at the screen, clicks and types like a person, and sends back the result with every step as proof. You pay only when a task succeeds, and test mode is free.
+[![mcptry](https://mcptry.com/badge/dev.hapti/hapti)](https://mcptry.com/servers/dev.hapti/hapti)
+
+**Hapti does tasks on websites that have no API.** You send a website and a goal in plain words. An agent opens a real browser, looks at the screen, clicks and types like a person, and sends back the result with every step as proof. You pay only when a task succeeds, in test mode as in live mode.
 
 [Documentation](https://hapti.dev/docs/) · [Quickstart](https://hapti.dev/docs/quickstart) · [API reference](https://hapti.dev/docs/api-tasks) · [For AI agents](https://hapti.dev/docs/agents) · [llms.txt](https://hapti.dev/llms.txt) · [OpenAPI](https://hapti.dev/openapi.json)
 

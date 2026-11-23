@@ -86,6 +86,11 @@ claude mcp add --transport http hapti https://api.hapti.dev/mcp \
 
 Tools: `start_task`, `get_task`, `answer_task`, `approve_task`, `cancel_task`, `estimate_task`, `list_templates`, `list_tasks`, `list_recipes`, `get_balance`. See [Build with AI agents](https://hapti.dev/docs/agents).
 
+## Use it from n8n and agent frameworks
+
+- **n8n**: install the community node [`n8n-nodes-hapti`](https://www.npmjs.com/package/n8n-nodes-hapti) ([source](https://github.com/hapti-dev/n8n-nodes-hapti)) from Settings, Community Nodes. See [Hapti for n8n](https://hapti.dev/docs/n8n).
+- **LangChain, OpenAI Agents SDK, CrewAI, Vercel AI SDK**: connect to the MCP server above in a few lines. See [Agent frameworks](https://hapti.dev/docs/frameworks).
+
 ## What you get
 
 - **People, not sessions**: tasks for the same `user` share one device, one session, one memory, an email inbox and a vault of sign-in details the model never sees.

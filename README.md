@@ -1,6 +1,6 @@
 # Hapti
 
-[![mcptry](https://mcptry.com/badge/dev.hapti/hapti)](https://mcptry.com/servers/dev.hapti/hapti)
+[![mcptry](https://mcptry.com/badge/dev.hapti/hapti)](https://mcptry.com/servers/dev.hapti/hapti) [![Hapti MCP connector](https://glama.ai/mcp/connectors/dev.hapti/hapti/badges/score.svg)](https://glama.ai/mcp/connectors/dev.hapti/hapti)
 
 **Hapti does tasks on websites that have no API.** You send a website and a goal in plain words. An agent opens a real browser, looks at the screen, clicks and types like a person, and sends back the result with every step as proof. You pay only when a task succeeds, in test mode as in live mode.
 

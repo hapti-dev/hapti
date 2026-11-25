@@ -1,0 +1,84 @@
+name: Hapti Test
+description: Run end-to-end tests written in plain words against your app at every pull request, with confirmed verdicts and proof.
+author: Hapti
+branding:
+  icon: check-circle
+  color: orange
+inputs:
+  url:
+    description: Address of the application to test, like the preview URL of the pull request
+    required: true
+  api-key:
+    description: Your Hapti API key, from a repository secret
+    required: true
+  tests:
+    description: Names of the tests to run, separated by spaces (all tests by default)
+    default: ''
+  tag:
+    description: Run only the tests with this tag
+    default: ''
+  dir:
+    description: Folder of the tests
+    default: .hapti/tests
+  fail-on-could-not-test:
+    description: Fail the job when a test could not run (by default only a confirmed bug fails it)
+    default: 'false'
+  comment:
+    description: Post the verdicts as a comment on the pull request, updated at each run
+    default: 'true'
+  github-token:
+    description: Token used to post the comment
+    default: ${{ github.token }}
+  cli-version:
+    description: Version of @hapti/cli to use
+    default: '0.3'
+outputs:
+  verdict:
+    description: passed, bug or could_not_test
+    value: ${{ steps.run.outputs.verdict }}
+runs:
+  using: composite
+  steps:
+    - id: run
+      shell: bash
+      env:
+        HAPTI_API_KEY: ${{ inputs.api-key }}
+        HAPTI_URL: ${{ inputs.url }}
+        HAPTI_TESTS: ${{ inputs.tests }}
+        HAPTI_TAG: ${{ inputs.tag }}
+        HAPTI_DIR: ${{ inputs.dir }}
+        HAPTI_CLI: ${{ inputs.cli-version }}
+      run: |
+        set +e
+        args=(test)
+        if [ -n "$HAPTI_TESTS" ]; then read -r -a names <<< "$HAPTI_TESTS"; args+=("${names[@]}"); fi
+        args+=(--url "$HAPTI_URL" --dir "$HAPTI_DIR" --junit hapti-test.xml --markdown hapti-test.md)
+        if [ -n "$HAPTI_TAG" ]; then args+=(--tag "$HAPTI_TAG"); fi
+        npx -y "@hapti/cli@$HAPTI_CLI" "${args[@]}"
+        code=$?
+        echo "code=$code" >> "$GITHUB_OUTPUT"
+        case $code in 0) echo "verdict=passed" >> "$GITHUB_OUTPUT" ;; 1) echo "verdict=bug" >> "$GITHUB_OUTPUT" ;; 2) echo "verdict=could_not_test" >> "$GITHUB_OUTPUT" ;; esac
+    - if: always() && inputs.comment == 'true' && github.event_name == 'pull_request' && hashFiles('hapti-test.md') != ''
+      uses: actions/github-script@v7
+      with:
+        github-token: ${{ inputs.github-token }}
+        script: |
+          const fs = require('fs');
+          const body = fs.readFileSync('hapti-test.md', 'utf8');
+          const { owner, repo } = context.repo;
+          const issue_number = context.payload.pull_request.number;
+          const comments = await github.paginate(github.rest.issues.listComments, { owner, repo, issue_number, per_page: 100 });
+          const mine = comments.find((c) => c.body && c.body.startsWith('<!-- hapti-test -->'));
+          if (mine) await github.rest.issues.updateComment({ owner, repo, comment_id: mine.id, body });
+          else await github.rest.issues.createComment({ owner, repo, issue_number, body });
+    - shell: bash
+      env:
+        CODE: ${{ steps.run.outputs.code }}
+        STRICT: ${{ inputs.fail-on-could-not-test }}
+      run: |
+        case "$CODE" in
+          0) exit 0 ;;
+          1) echo "Hapti Test found a confirmed bug"; exit 1 ;;
+          2) if [ "$STRICT" = "true" ]; then echo "A test could not run"; exit 1; fi; echo "::warning title=Hapti Test::A test could not run; see the summary"; exit 0 ;;
+          *) echo "Hapti Test could not start (code $CODE)"; exit 1 ;;
+        esac

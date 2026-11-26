@@ -1,0 +1,79 @@
+# Hapti
+
+> Hapti is an API that does tasks on websites that have no API. An agent operates a real browser by sight, like a person: it fills forms, books appointments, downloads invoices, submits claims, signs in with the person's stored accounts, asks when a value is missing, and returns the result with proof. You pay for each action of the agent that worked, whatever the outcome, in test as in live mode; test tasks never send the data to the sites.
+
+Use Hapti when a job has to be done on a website and that website offers no API, or its API does not cover the job. Do not use it when a proper API exists for the job.
+
+Use Hapti Test to test a web application end to end without selectors: tests are written in plain words in .hapti/tests/*.md, run with `npx @hapti/cli test --url <app>`, and set up in CI with `npx @hapti/cli test init-ci`. Guide: https://hapti.dev/docs/test-apps.md
+
+Coding agent adding Hapti to an application: read [Integrate Hapti in code](https://hapti.dev/docs/integrate.md) first. It is short and complete: the library (npm install hapti-sdk, pip install hapti), the exact request fields, the task loop, statuses and errors.
+
+Base address: https://api.hapti.dev. Authentication: `Authorization: Bearer hp_test_...` (tests: nothing you give is submitted) or `hp_live_...` (real tasks). Remote MCP server: https://api.hapti.dev/mcp with the same header.
+
+
+## Get started
+
+- [Introduction](https://hapti.dev/docs/index.md): Hapti is an API that does tasks on websites that have no API. An agent uses a real browser by sight and returns the result with proof.
+- [Quickstart](https://hapti.dev/docs/quickstart.md): Create a key, run your first Hapti task with cURL, JavaScript or Python, answer the agent when it asks, and read the result.
+- [Integrate Hapti in code](https://hapti.dev/docs/integrate.md): Everything a developer or a coding agent needs to call Hapti from code, in one page: the library, the exact fields, the task loop, statuses and errors.
+- [Build with AI agents](https://hapti.dev/docs/agents.md): Connect Hapti to Claude Code, Cursor or any MCP client, give coding agents the docs to integrate Hapti, and let them set up end-to-end tests with Hapti Test.
+- [Agent frameworks](https://hapti.dev/docs/frameworks.md): Give an agent built with LangChain, the OpenAI Agents SDK, CrewAI or the Vercel AI SDK the Hapti tools, through the MCP server, in a few lines.
+- [n8n](https://hapti.dev/docs/n8n.md): Use Hapti in n8n workflows and in the n8n AI Agent with the Hapti community node: run a task on any website and get the result in the next step.
+- [Console guide](https://hapti.dev/docs/console.md): Every screen of the Hapti console with its direct link and the exact labels of its buttons, so an AI agent can walk a person through any job step by step.
+
+## Guides
+
+- [Tasks](https://hapti.dev/docs/tasks.md): How a Hapti task works from creation to result. Statuses, questions and approvals, structured output, budgets, languages, recipes and proof.
+- [Test your app](https://hapti.dev/docs/test-apps.md): Hapti Test runs end-to-end tests written in plain words against your application, at every pull request, and gives a verdict you can trust, with proof.
+- [Monitors](https://hapti.dev/docs/monitors.md): Watch a website on a schedule and receive only what changed, as a webhook, with the current value always readable like an API.
+- [Templates](https://hapti.dev/docs/templates.md): Ready-made Hapti tasks for common jobs on websites without an API. Give a template id and its params instead of writing a goal.
+- [Users and identity](https://hapti.dev/docs/users.md): Act for each of your customers with their own device, session, memory, email inbox, phone number and vault of sign-in details.
+- [Live updates](https://hapti.dev/docs/live.md): Follow a Hapti task step by step as it happens with Server-Sent Events, or every task of your organisation at once.
+- [Webhooks](https://hapti.dev/docs/webhooks.md): Receive Hapti events on your server, signed and retried for three days. Endpoints, event types, signature checks, retries, secret rotation and recovery.
+- [Events](https://hapti.dev/docs/events.md): Read every Hapti event of the last 30 days through the API, the same events webhooks send. Use it to catch up, reconcile or poll.
+- [Batches and schedules](https://hapti.dev/docs/batches.md): Run many Hapti tasks at once with a batch, or the same task again and again on a schedule, in the time zone of your choice.
+- [Files](https://hapti.dev/docs/files.md): Give Hapti tasks documents to read or upload, such as screenshots, scans and PDFs, and download the documents a site gave during a task.
+
+## Solutions
+
+- [AI end-to-end testing without selectors](https://hapti.dev/docs/ai-end-to-end-testing.md): Hapti Test runs end-to-end tests written in plain words against your web app at every pull request, with confirmed verdicts and screenshots, and no selectors to maintain.
+- [Browser automation API for websites without an API](https://hapti.dev/docs/browser-automation-api.md): Automate any website that has no API with one HTTP call. An agent uses a real browser by sight and returns the result with proof, billed for each action that works.
+- [Computer use API, billed per action that works](https://hapti.dev/docs/computer-use-api.md): A managed computer use API: the model, real browsers, sign-ins and proof in one call. Send a goal, get a checked result, pay only for the actions that work.
+- [Give your AI agent a browser with MCP](https://hapti.dev/docs/mcp-browser-tool.md): Connect Claude, Cursor or your own agent to the Hapti MCP server so it can book, fill in forms and download documents on websites that have no API.
+- [Automate appointment booking on any website](https://hapti.dev/docs/book-appointments.md): Book appointments on clinics, town halls and booking sites that have no API: the agent finds a slot, asks before committing and returns the confirmation.
+- [Download invoices and documents from customer portals](https://hapti.dev/docs/download-invoices.md): Fetch invoices, statements and certificates from supplier, utility and bank portals that have no API, with the files and their key figures returned to you.
+- [Fill in and submit online forms automatically](https://hapti.dev/docs/fill-forms.md): Fill and submit online forms on websites with no API, from public administration to insurers, with the person's data, questions when something is missing and proof.
+- [Hapti and the other ways to automate websites](https://hapti.dev/docs/alternatives.md): How Hapti compares with computer use models, cloud browsers and browser agent services, to pick the right tool for websites that have no API.
+- [API d'automatisation de sites web sans API](https://hapti.dev/docs/automatisation-sites-web.md): Hapti automatise les démarches et formulaires sur les sites sans API, en français comme dans toutes les langues, avec un vrai navigateur, payé à l'action qui marche.
+
+## Platform
+
+- [Authentication](https://hapti.dev/docs/authentication.md): Authenticate with a bearer key. Test keys never submit your data to the sites, live keys do the task. Both pay for the actions that worked.
+- [Errors](https://hapti.dev/docs/errors.md): How the Hapti API reports errors. HTTP status codes, error types, stable reason codes and what to do about each of them.
+- [Idempotency](https://hapti.dev/docs/idempotency.md): Retry any Hapti POST request safely with an Idempotency-Key, so a dropped connection never creates a task or a charge twice.
+- [Versioning](https://hapti.dev/docs/versioning.md): Hapti API versions are dated. Your organisation is pinned to one, so a change never breaks your app until you choose to upgrade.
+- [Pagination](https://hapti.dev/docs/pagination.md): Hapti lists are paged with a cursor. Read has_more and next_cursor to get every item, even while new ones arrive.
+- [Rate limits](https://hapti.dev/docs/limits.md): How many requests and new tasks the Hapti API accepts per minute, and how to handle a 429 answer with its Retry-After header.
+- [Test your integration](https://hapti.dev/docs/testing.md): Mock tasks answer at once with the result you choose, so your tests and CI run in milliseconds, never reach a website and are never billed.
+- [Command line](https://hapti.dev/docs/cli.md): The hapti command forwards webhooks to your machine, fires test events, and runs tasks from the terminal, answering the agent's questions as they come.
+- [Pricing and billing](https://hapti.dev/docs/pricing.md): Hapti bills each action of the agent that worked, whatever the outcome, from a prepaid credit, in test and live mode. Failed actions are free.
+- [Libraries](https://hapti.dev/docs/sdks.md): The official Hapti libraries for JavaScript and Python. Retries, idempotency, live waiting, pagination and webhook signature checks built in.
+- [Tasks API](https://hapti.dev/docs/api-tasks.md): Reference of the Hapti tasks endpoints: parameters, fields and real responses.
+- [Tests API](https://hapti.dev/docs/api-tests.md): Reference of the Hapti tests endpoints: parameters, fields and real responses.
+- [Monitors API](https://hapti.dev/docs/api-monitors.md): Reference of the Hapti monitors endpoints: parameters, fields and real responses.
+- [Catalogue API](https://hapti.dev/docs/api-catalogue.md): Reference of the Hapti catalogue endpoints: parameters, fields and real responses.
+- [Batches API](https://hapti.dev/docs/api-batches.md): Reference of the Hapti batches endpoints: parameters, fields and real responses.
+- [Schedules API](https://hapti.dev/docs/api-schedules.md): Reference of the Hapti schedules endpoints: parameters, fields and real responses.
+- [Users API](https://hapti.dev/docs/api-users.md): Reference of the Hapti users endpoints: parameters, fields and real responses.
+- [Webhooks API](https://hapti.dev/docs/api-webhooks.md): Reference of the Hapti webhooks endpoints: parameters, fields and real responses.
+- [Events API](https://hapti.dev/docs/api-events.md): Reference of the Hapti events endpoints: parameters, fields and real responses.
+- [Recipes API](https://hapti.dev/docs/api-recipes.md): Reference of the Hapti recipes endpoints: parameters, fields and real responses.
+- [Account API](https://hapti.dev/docs/api-account.md): Reference of the Hapti account endpoints: parameters, fields and real responses.
+
+## API reference
+
+
+## Optional
+
+- [OpenAPI 3.1 specification](https://hapti.dev/openapi.json): every endpoint, field and response
+- [Full documentation in one file](https://hapti.dev/llms-full.txt)

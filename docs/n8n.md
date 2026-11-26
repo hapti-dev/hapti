@@ -1,5 +1,7 @@
 # n8n
 
+> Source: [https://hapti.dev/docs/n8n](https://hapti.dev/docs/n8n). This copy is updated at each release.
+
 > Use Hapti in n8n workflows and in the n8n AI Agent with the Hapti community node: run a task on any website and get the result in the next step.
 
 The Hapti node for [n8n](https://n8n.io) runs website tasks from any workflow: book an appointment, fill in a form, download an invoice, check a status behind a login. It also works as a tool of the n8n AI Agent.

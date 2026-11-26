@@ -1,5 +1,7 @@
 # Files
 
+> Source: [https://hapti.dev/docs/files](https://hapti.dev/docs/files). This copy is updated at each release.
+
 > Give Hapti tasks documents to read or upload, such as screenshots, scans and PDFs, and download the documents a site gave during a task.
 
 ## Files the agent reads or uploads

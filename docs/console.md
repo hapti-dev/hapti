@@ -1,5 +1,7 @@
 # Console guide
 
+> Source: [https://hapti.dev/docs/console](https://hapti.dev/docs/console). This copy is updated at each release.
+
 > Every screen of the Hapti console with its direct link and the exact labels of its buttons, so an AI agent can walk a person through any job step by step.
 
 The console at [app.hapti.dev](https://app.hapti.dev) is where people run tasks, manage keys, pay and invite their team. This page describes every screen, so that an assistant can guide someone through it without seeing their screen.

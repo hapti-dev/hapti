@@ -1,5 +1,7 @@
 # Batches API
 
+> Source: [https://hapti.dev/docs/api-batches](https://hapti.dev/docs/api-batches). This copy is updated at each release.
+
 > Reference of the Hapti batches endpoints: parameters, fields and real responses.
 
 Every endpoint takes a key in the Authorization header: `Authorization: Bearer hp_test_...`. Base address: `https://api.hapti.dev`. The full specification is in [openapi.json](/openapi.json).

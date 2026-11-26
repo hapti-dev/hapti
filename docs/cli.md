@@ -1,5 +1,7 @@
 # Command line
 
+> Source: [https://hapti.dev/docs/cli](https://hapti.dev/docs/cli). This copy is updated at each release.
+
 > The hapti command forwards webhooks to your machine, fires test events, and runs tasks from the terminal, answering the agent's questions as they come.
 
 The `hapti` command needs only Node.js 18 or later. Run it with `npx @hapti/cli`, or install it once and use `hapti`:

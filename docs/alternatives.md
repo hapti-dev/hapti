@@ -1,5 +1,7 @@
 # Hapti and the other ways to automate websites
 
+> Source: [https://hapti.dev/docs/alternatives](https://hapti.dev/docs/alternatives). This copy is updated at each release.
+
 > How Hapti compares with computer use models, cloud browsers and browser agent services, to pick the right tool for websites that have no API.
 
 There are three families of tools for getting work done on websites that have no API. Each is the right choice for some teams. This page says plainly what each one gives you, as of November 2026; check each vendor's own pages for their current offer.

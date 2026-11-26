@@ -1,5 +1,7 @@
 # Pagination
 
+> Source: [https://hapti.dev/docs/pagination](https://hapti.dev/docs/pagination). This copy is updated at each release.
+
 > Hapti lists are paged with a cursor. Read has_more and next_cursor to get every item, even while new ones arrive.
 
 Lists come newest first, one page at a time.

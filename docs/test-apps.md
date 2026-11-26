@@ -1,5 +1,7 @@
 # Test your app
 
+> Source: [https://hapti.dev/docs/test-apps](https://hapti.dev/docs/test-apps). This copy is updated at each release.
+
 > Hapti Test runs end-to-end tests written in plain words against your application, at every pull request, and gives a verdict you can trust, with proof.
 
 Hapti Test checks your application the way a person would, at every change. You write each test in plain words, in your repository; an agent opens your app in a real browser, does the journey, checks what you asked, and tells you what works, what is broken and why, with screenshots.

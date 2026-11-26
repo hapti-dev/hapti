@@ -1,5 +1,7 @@
 # Integrate Hapti in code
 
+> Source: [https://hapti.dev/docs/integrate](https://hapti.dev/docs/integrate). This copy is updated at each release.
+
 > Everything a developer or a coding agent needs to call Hapti from code, in one page: the library, the exact fields, the task loop, statuses and errors.
 
 This page is the short path for a developer or a coding agent who adds Hapti to an application. Every field below is generated from the [OpenAPI specification](https://hapti.dev/openapi.json), the same one the API is checked against, so the names are exact. Each guide linked here goes further.

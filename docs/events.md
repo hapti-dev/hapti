@@ -1,5 +1,7 @@
 # Events
 
+> Source: [https://hapti.dev/docs/events](https://hapti.dev/docs/events). This copy is updated at each release.
+
 > Read every Hapti event of the last 30 days through the API, the same events webhooks send. Use it to catch up, reconcile or poll.
 
 Every event Hapti sends by webhook is also stored for 30 days, and can be read through the API even if you have no webhook at all. Use it to catch up after downtime, to reconcile, or when your server cannot receive webhooks.

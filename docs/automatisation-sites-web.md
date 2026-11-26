@@ -1,5 +1,7 @@
 # API d'automatisation de sites web sans API
 
+> Source: [https://hapti.dev/docs/automatisation-sites-web](https://hapti.dev/docs/automatisation-sites-web). This copy is updated at each release.
+
 > Hapti automatise les démarches et formulaires sur les sites sans API, en français comme dans toutes les langues, avec un vrai navigateur, payé à l'action qui marche.
 
 Beaucoup de sites dont dépendent vos utilisateurs n'ont pas d'API : espaces clients d'assureurs et de banques, mairies et administrations, cliniques, fournisseurs d'énergie, places de marché. Hapti est une API qui fait les tâches sur ces sites à leur place : vous donnez une adresse et un objectif en mots simples, un agent fait le travail dans un vrai navigateur, comme une personne, et renvoie le résultat avec la preuve.

@@ -1,5 +1,7 @@
 # Pricing and billing
 
+> Source: [https://hapti.dev/docs/pricing](https://hapti.dev/docs/pricing). This copy is updated at each release.
+
 > Hapti bills each action of the agent that worked, whatever the outcome, from a prepaid credit, in test and live mode. Failed actions are free.
 
 ## You pay for the work done

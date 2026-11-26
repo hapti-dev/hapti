@@ -1,5 +1,7 @@
 # Agent frameworks
 
+> Source: [https://hapti.dev/docs/frameworks](https://hapti.dev/docs/frameworks). This copy is updated at each release.
+
 > Give an agent built with LangChain, the OpenAI Agents SDK, CrewAI or the Vercel AI SDK the Hapti tools, through the MCP server, in a few lines.
 
 An agent you build with a framework gets the Hapti tools from the remote MCP server at `https://api.hapti.dev/mcp`. The framework lists the tools (`start_task`, `get_task`, `answer_task` and the others), and the model calls them like any other tool. Each example below was run against Hapti: it lists the tools and calls one.

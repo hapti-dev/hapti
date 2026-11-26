@@ -1,5 +1,7 @@
 # Webhooks
 
+> Source: [https://hapti.dev/docs/webhooks](https://hapti.dev/docs/webhooks). This copy is updated at each release.
+
 > Receive Hapti events on your server, signed and retried for three days. Endpoints, event types, signature checks, retries, secret rotation and recovery.
 
 Webhooks push each event to your server the moment it happens: a task succeeds, waits for an answer, fails. They are the right way to get results in production.

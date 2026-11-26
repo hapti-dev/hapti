@@ -1,5 +1,7 @@
 # Rate limits
 
+> Source: [https://hapti.dev/docs/limits](https://hapti.dev/docs/limits). This copy is updated at each release.
+
 > How many requests and new tasks the Hapti API accepts per minute, and how to handle a 429 answer with its Retry-After header.
 
 Each organisation and mode has its own limits:

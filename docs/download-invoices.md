@@ -1,5 +1,7 @@
 # Download invoices and documents from customer portals
 
+> Source: [https://hapti.dev/docs/download-invoices](https://hapti.dev/docs/download-invoices). This copy is updated at each release.
+
 > Fetch invoices, statements and certificates from supplier, utility and bank portals that have no API, with the files and their key figures returned to you.
 
 Invoices and statements often sit in customer areas that offer no API or export. Hapti signs in as the person, finds the document and returns the file with the figures you need.

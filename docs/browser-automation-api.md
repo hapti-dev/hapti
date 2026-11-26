@@ -1,5 +1,7 @@
 # Browser automation API for websites without an API
 
+> Source: [https://hapti.dev/docs/browser-automation-api](https://hapti.dev/docs/browser-automation-api). This copy is updated at each release.
+
 > Automate any website that has no API with one HTTP call. An agent uses a real browser by sight and returns the result with proof, billed for each action that works.
 
 Many websites that matter to your users have no API: insurer and bank portals, town halls and public administrations, clinics, suppliers, utilities, marketplaces. Hapti is a browser automation API for them. You send a starting address and a goal in plain words, and an agent does the job in a real browser, like a person would, then returns the result.

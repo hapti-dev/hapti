@@ -1,5 +1,7 @@
 # Tasks
 
+> Source: [https://hapti.dev/docs/tasks](https://hapti.dev/docs/tasks). This copy is updated at each release.
+
 > How a Hapti task works from creation to result. Statuses, questions and approvals, structured output, budgets, languages, recipes and proof.
 
 A task is one job done by an agent on a website. You give a starting address, a goal and the data it may use. The agent works in a real browser until the goal is reached, it needs something from a person, or it cannot go on.

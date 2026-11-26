@@ -1,5 +1,7 @@
 # Live updates
 
+> Source: [https://hapti.dev/docs/live](https://hapti.dev/docs/live). This copy is updated at each release.
+
 > Follow a Hapti task step by step as it happens with Server-Sent Events, or every task of your organisation at once.
 
 Hapti streams what happens with [Server-Sent Events](https://developer.mozilla.org/docs/Web/API/Server-sent_events). It is the fastest way to show progress in your app, and the libraries use it to return as soon as a task ends.

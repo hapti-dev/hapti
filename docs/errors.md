@@ -1,5 +1,7 @@
 # Errors
 
+> Source: [https://hapti.dev/docs/errors](https://hapti.dev/docs/errors). This copy is updated at each release.
+
 > How the Hapti API reports errors. HTTP status codes, error types, stable reason codes and what to do about each of them.
 
 Errors come with an HTTP status and a JSON body that says what went wrong in plain words.

@@ -1,5 +1,7 @@
 # Authentication
 
+> Source: [https://hapti.dev/docs/authentication](https://hapti.dev/docs/authentication). This copy is updated at each release.
+
 > Authenticate with a bearer key. Test keys never submit your data to the sites, live keys do the task. Both pay for the actions that worked.
 
 Every request carries an API key in the `Authorization` header:

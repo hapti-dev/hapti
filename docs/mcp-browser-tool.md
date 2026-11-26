@@ -1,5 +1,7 @@
 # Give your AI agent a browser with MCP
 
+> Source: [https://hapti.dev/docs/mcp-browser-tool](https://hapti.dev/docs/mcp-browser-tool). This copy is updated at each release.
+
 > Connect Claude, Cursor or your own agent to the Hapti MCP server so it can book, fill in forms and download documents on websites that have no API.
 
 An AI agent is stuck when the job lives on a website with no API. The Hapti MCP server gives it a real browser it can use by sight: the agent asks Hapti to do a task on a website, follows it, answers its questions with the person, and gets the result with proof.

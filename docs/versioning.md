@@ -1,5 +1,7 @@
 # Versioning
 
+> Source: [https://hapti.dev/docs/versioning](https://hapti.dev/docs/versioning). This copy is updated at each release.
+
 > Hapti API versions are dated. Your organisation is pinned to one, so a change never breaks your app until you choose to upgrade.
 
 Hapti versions its API with dates. When a change could break an existing app, it comes with a new version. Your organisation is pinned to the version of the day it was created, and keeps its behaviour until you choose to move.

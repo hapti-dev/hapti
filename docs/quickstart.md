@@ -1,5 +1,7 @@
 # Quickstart
 
+> Source: [https://hapti.dev/docs/quickstart](https://hapti.dev/docs/quickstart). This copy is updated at each release.
+
 > Create a key, run your first Hapti task with cURL, JavaScript or Python, answer the agent when it asks, and read the result.
 
 ## 1. Get a key

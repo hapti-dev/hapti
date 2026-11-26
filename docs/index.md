@@ -1,5 +1,7 @@
 # Introduction
 
+> Source: [https://hapti.dev/docs/](https://hapti.dev/docs/). This copy is updated at each release.
+
 > Hapti is an API that does tasks on websites that have no API. An agent uses a real browser by sight and returns the result with proof.
 
 Hapti does the work that software cannot reach through an API. You send a website and a goal in plain words. An agent opens a real browser, looks at the screen, clicks and types like a person, and sends back the result with every step it took as proof.

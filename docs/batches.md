@@ -1,5 +1,7 @@
 # Batches and schedules
 
+> Source: [https://hapti.dev/docs/batches](https://hapti.dev/docs/batches). This copy is updated at each release.
+
 > Run many Hapti tasks at once with a batch, or the same task again and again on a schedule, in the time zone of your choice.
 
 ## Batches

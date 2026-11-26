@@ -1,5 +1,7 @@
 # Monitors
 
+> Source: [https://hapti.dev/docs/monitors](https://hapti.dev/docs/monitors). This copy is updated at each release.
+
 > Watch a website on a schedule and receive only what changed, as a webhook, with the current value always readable like an API.
 
 A monitor checks a website on a schedule with a task, compares each result with the previous one, and tells you **only what changed**: the new items, the removed ones, and the ones whose values moved. Your application no longer runs the task, keeps the last result or compares anything. And at any time it reads the current value of the website through the monitor, as if the website had an API.

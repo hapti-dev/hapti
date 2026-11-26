@@ -1,5 +1,7 @@
 # Test your integration
 
+> Source: [https://hapti.dev/docs/testing](https://hapti.dev/docs/testing). This copy is updated at each release.
+
 > Mock tasks answer at once with the result you choose, so your tests and CI run in milliseconds, never reach a website and are never billed.
 
 Hapti gives two ways to test, for two different needs.

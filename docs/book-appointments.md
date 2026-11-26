@@ -1,5 +1,7 @@
 # Automate appointment booking on any website
 
+> Source: [https://hapti.dev/docs/book-appointments](https://hapti.dev/docs/book-appointments). This copy is updated at each release.
+
 > Book appointments on clinics, town halls and booking sites that have no API: the agent finds a slot, asks before committing and returns the confirmation.
 
 Appointments live on clinic websites, town hall portals and booking platforms, and very few of them offer an API. With Hapti your application asks for the appointment in plain words and gets back the confirmation.

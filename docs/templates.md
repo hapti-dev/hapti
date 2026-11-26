@@ -1,5 +1,7 @@
 # Templates
 
+> Source: [https://hapti.dev/docs/templates](https://hapti.dev/docs/templates). This copy is updated at each release.
+
 > Ready-made Hapti tasks for common jobs on websites without an API. Give a template id and its params instead of writing a goal.
 
 Templates are tasks that are already written and tuned. Instead of a `url` and a `goal`, you give a `template` and its `params`. Everything else works like any task: `user`, `data`, `output`, webhooks and the rest.

@@ -1,5 +1,7 @@
 # Libraries
 
+> Source: [https://hapti.dev/docs/sdks](https://hapti.dev/docs/sdks). This copy is updated at each release.
+
 > The official Hapti libraries for JavaScript and Python. Retries, idempotency, live waiting, pagination and webhook signature checks built in.
 
 The libraries wrap the API with the good habits built in: an idempotency key on every POST, retries of `429` and `5xx` with a growing wait, live waiting through the stream, pagination and webhook checks.

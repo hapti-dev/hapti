@@ -1,5 +1,7 @@
 # Build with AI agents
 
+> Source: [https://hapti.dev/docs/agents](https://hapti.dev/docs/agents). This copy is updated at each release.
+
 > Connect Hapti to Claude Code, Cursor or any MCP client, give coding agents the docs to integrate Hapti, and let them set up end-to-end tests with Hapti Test.
 
 Hapti is made to be used by AI agents as much as by developers. An agent can call Hapti through its remote MCP server to do tasks on websites, and a coding agent can read these docs as plain text to integrate Hapti in your code.

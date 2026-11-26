@@ -1,5 +1,7 @@
 # AI end-to-end testing without selectors
 
+> Source: [https://hapti.dev/docs/ai-end-to-end-testing](https://hapti.dev/docs/ai-end-to-end-testing). This copy is updated at each release.
+
 > Hapti Test runs end-to-end tests written in plain words against your web app at every pull request, with confirmed verdicts and screenshots, and no selectors to maintain.
 
 End-to-end tests catch what matters most, a broken sign-up or checkout, but scripted tests break each time a button is renamed and take hours to maintain. Hapti Test replaces the script with a sentence: an agent opens your app in a real browser, does the journey like a person and checks what you asked.

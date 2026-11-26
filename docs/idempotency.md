@@ -1,5 +1,7 @@
 # Idempotency
 
+> Source: [https://hapti.dev/docs/idempotency](https://hapti.dev/docs/idempotency). This copy is updated at each release.
+
 > Retry any Hapti POST request safely with an Idempotency-Key, so a dropped connection never creates a task or a charge twice.
 
 A network can drop an answer after the server has acted. If you then retry a `POST /v1/tasks`, you could start the same task twice and pay twice. An idempotency key prevents it.

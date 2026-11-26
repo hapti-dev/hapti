@@ -1,5 +1,7 @@
 # Computer use API, billed per action that works
 
+> Source: [https://hapti.dev/docs/computer-use-api](https://hapti.dev/docs/computer-use-api). This copy is updated at each release.
+
 > A managed computer use API: the model, real browsers, sign-ins and proof in one call. Send a goal, get a checked result, pay only for the actions that work.
 
 Computer use models can operate a browser, but turning one into a product takes much more than the model: browsers to run and scale, sessions to keep, sign-ins and two-factor codes, captchas and anti-robot pages, retries, proof, and a way to know what to bill. Hapti gives you all of it behind one API, and charges only for tasks that succeed.

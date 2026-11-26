@@ -1,5 +1,7 @@
 # Users and identity
 
+> Source: [https://hapti.dev/docs/users](https://hapti.dev/docs/users). This copy is updated at each release.
+
 > Act for each of your customers with their own device, session, memory, email inbox, phone number and vault of sign-in details.
 
 Most real tasks are done for someone: your customer, a patient, a tenant. Give each task the `user` it acts for, with your own id for that person. Hapti then keeps a stable identity for them from task to task, so sites see the same person coming back instead of a new robot each time.

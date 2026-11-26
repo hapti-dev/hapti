@@ -2,7 +2,7 @@
 
 [![mcptry](https://mcptry.com/badge/dev.hapti/hapti)](https://mcptry.com/servers/dev.hapti/hapti) [![Hapti MCP connector](https://glama.ai/mcp/connectors/dev.hapti/hapti/badges/score.svg)](https://glama.ai/mcp/connectors/dev.hapti/hapti)
 
-**Hapti does tasks on websites that have no API.** You send a website and a goal in plain words. An agent opens a real browser, looks at the screen, clicks and types like a person, and sends back the result with every step as proof. You pay only when a task succeeds, in test mode as in live mode.
+**Hapti does tasks on websites that have no API.** You send a website and a goal in plain words. An agent opens a real browser, looks at the screen, clicks and types like a person, and sends back the result with every step as proof. You pay only for the actions of the agent that worked, $0.01 each, in test mode as in live mode; an action that fails costs nothing.
 
 [Documentation](https://hapti.dev/docs/) · [Quickstart](https://hapti.dev/docs/quickstart) · [API reference](https://hapti.dev/docs/api-tasks) · [For AI agents](https://hapti.dev/docs/agents) · [llms.txt](https://hapti.dev/llms.txt) · [OpenAPI](https://hapti.dev/openapi.json)
 

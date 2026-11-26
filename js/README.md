@@ -1,6 +1,6 @@
 # hapti
 
-An agent that does tasks on any website by sight, in a real browser. You pay only when it succeeds.
+An agent that does tasks on any website by sight, in a real browser. You pay only for the actions that work.
 
 Documentation: [hapti.dev/docs](https://hapti.dev/docs/) · API reference: [hapti.dev/docs/api-tasks](https://hapti.dev/docs/api-tasks) · For AI agents: [hapti.dev/llms.txt](https://hapti.dev/llms.txt)
 
@@ -37,7 +37,7 @@ await hapti.tasks.run(
 
 - A `user` is one person of yours: they keep their session, device and mailbox from task to task.
 - Every success becomes a recipe: the same task is replayed next time, faster and cheaper.
-- `output` gives you `result.data`, checked against your JSON Schema; a task that cannot fit it is not billed.
+- `output` gives you `result.data`, checked against your JSON Schema; a task that cannot fit it ends incomplete.
 - `files` go in (base64 or https address); files the site gives come back in `task.files`.
 
 ## Many tasks
@@ -68,7 +68,7 @@ const { likely_cents, at_most_cents } = await hapti.tasks.estimate({ url, goal }
 const ok = await Hapti.verifyWebhook(rawBody, request.headers['hapti-signature'], process.env.HAPTI_WEBHOOK_SECRET);
 ```
 
-Test keys (`hp_test_…`) never send the data to the sites; live keys (`hp_live_…`) do the task for real. Both are billed only when a task succeeds, from the same credit.
+Test keys (`hp_test_…`) never send the data to the sites; live keys (`hp_live_…`) do the task for real. Both pay for each action that worked, from the same credit.
 
 ## Your users connect their own accounts
 

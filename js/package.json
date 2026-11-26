@@ -1,7 +1,7 @@
 {
   "name": "hapti-sdk",
   "version": "0.2.0",
-  "description": "Hapti: an agent that does tasks on any website by sight, paid only when it succeeds",
+  "description": "Hapti: an agent that does tasks on any website by sight, paid per action that works",
   "type": "module",
   "main": "./src/index.js",
   "types": "./src/index.d.ts",

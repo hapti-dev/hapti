@@ -32,6 +32,6 @@ Some clients name the type `http` or `streamable-http`, or take only `url` and `
 
 - Hapti is for tasks on websites that have no API: forms, bookings, customer areas, administration portals.
 - Put the facts the task needs in `data`. The agent never invents a value: when it needs one, the task waits with a question. Relay it to the user and answer with `answer_task`.
-- Test keys never submit anything for real; live keys do the task. Both are billed only when a task succeeds, from the same credit.
+- Test keys never submit anything for real; live keys do the task. Both pay for each action of the agent that worked, whatever the outcome of the task, from the same credit; an action that fails costs nothing.
 
 Documentation: https://hapti.dev/docs/agents

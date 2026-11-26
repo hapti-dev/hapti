@@ -5,7 +5,7 @@ description: Do tasks on websites that have no API with Hapti, a browser agent t
 
 # Hapti: tasks on websites that have no API
 
-Hapti runs an agent in a real browser that works on a website by sight, like a person, and returns the result with proof. Tasks are billed only when they succeed.
+Hapti runs an agent in a real browser that works on a website by sight, like a person, and returns the result with proof. Each action of the agent that worked is billed, whatever the outcome of the task; an action that fails costs nothing.
 
 ## When to use it
 

@@ -1,6 +1,6 @@
 # hapti
 
-An agent that does tasks on any website by sight, in a real browser. You pay only when it succeeds.
+An agent that does tasks on any website by sight, in a real browser. You pay only for the actions that work.
 
 Documentation: [hapti.dev/docs](https://hapti.dev/docs/) · API reference: [hapti.dev/docs/api-tasks](https://hapti.dev/docs/api-tasks) · For AI agents: [hapti.dev/llms.txt](https://hapti.dev/llms.txt)
 
@@ -32,7 +32,7 @@ hapti.tasks.run(
 
 `pending["action_url"]` is also a ready page you may send to your user yourself: they answer or approve on it, once, without any key.
 
-Every `user` keeps their session, device and mailbox; every success becomes a recipe replayed next time; `output` gives `result["data"]` checked against your schema, and a task that cannot fit it is not billed.
+Every `user` keeps their session, device and mailbox; every success becomes a recipe replayed next time; `output` gives `result["data"]` checked against your schema, and a task that cannot fit it ends incomplete.
 
 ```python
 batch = hapti.batches.create({"template": {"url": url, "goal": goal}, "items": [{"user": c.id, "data": {"contract": c.contract}} for c in customers]})
@@ -48,7 +48,7 @@ from hapti import verify_webhook
 verify_webhook(raw_body, headers["Hapti-Signature"], secret)
 ```
 
-Test keys (`hp_test_...`) never send the data to the sites; live keys (`hp_live_...`) do the task for real. Both are billed only when a task succeeds, from the same credit.
+Test keys (`hp_test_...`) never send the data to the sites; live keys (`hp_live_...`) do the task for real. Both pay for each action that worked, from the same credit.
 
 ```python
 link = hapti.users.connect_link("customer-42", accounts=[{"account": "bank", "origin": "https://www.my-bank.com", "label": "My bank"}], brand={"name": "Acme"})
